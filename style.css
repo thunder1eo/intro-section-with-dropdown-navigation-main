@@ -1,0 +1,111 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Epilogue&display=swap');
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+body {
+    background-color: var(--almost-white);
+    /* font-family: 'Epilogue'; */
+    font-weight: 500;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: var(--medium-gray) !important;
+}
+a, a:visited {
+    text-decoration: none;
+}
+header a, a:visited {
+    color: var(--medium-gray);
+}
+header a:hover {
+    text-decoration: none;
+    color: var(--almost-black);
+}
+
+.left-side {
+    display: flex;
+    gap: 50px;
+    margin: auto 0;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    margin-bottom: 0 ;
+    padding-left: 0 ;
+}
+.login--register {
+    display: flex;
+    gap: 30px;    
+}
+.login--register button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    color: var(--medium-gray);
+    font-weight: 500;
+}
+.login--register .register {
+    border: 2px solid var(--medium-gray);
+    border-radius: 10px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+}
+.content h1 {
+    font-weight: bold;
+    font-size: 80px;
+}
+.row .hero {
+    width: 500px;
+    min-height: 100%;
+}
+.content p {
+    color: var(--medium-gray);
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.content a {
+    padding: 15px 30px;
+    background-color: var(--almost-black);
+    width: 200px;
+    border-radius: 10px;
+    height: 61px;
+}
+.content a {
+    color: var(--almost-white);
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.5pt;
+    text-align: center;
+    margin-top: 50px;
+}
+.content a:hover {
+    background-color: var(--almost-white);
+    border: 1px solid var(--almost-black);
+    color: var(--almost-black);
+}
+.sponsors {
+    margin-top: 50px;
+    display: inline;
+    text-align: center;
+}
+.sponsors img {
+    margin: 0 27px;
+}
+@media screen and (max-width: 1300px) {
+    .row .hero {
+        width: 13vw;
+    }
+}
